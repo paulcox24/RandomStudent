@@ -1,14 +1,16 @@
 <section class="winner">
 <h3>And the winner is...</h3>
 <% if @winner %>
-  <h1><%= @winner.name %></h1>
+  <h1 class="winner-name"><%= @winner.name %></h1>
 <% else %>
-  <h1><%= @none %></h1>
+  <h1 class="winner-name"><%= @none %></h1>
 <% end %>
 
 <% if @winner %>
-  <h3>Present?</h3>
-  <%= link_to "Yep", present_path(@winner, here: 'y'), class: "btn btn-lg btn-success" %>
-  <%= link_to "Nope", present_path(@winner, here: 'n'), class: "btn btn-lg btn-danger" %>
+  <div class="present-check">
+    <h3>Present?</h3>
+    <%= link_to "Yep", present_path(@winner, here: 'y'), class: "btn btn-lg btn-success" %>
+    <%= link_to "Nope", present_path(@winner, here: 'n'), class: "btn btn-lg btn-danger" %>
+  </div>
 <% end %>
 </section>

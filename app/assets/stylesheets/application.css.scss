@@ -23,6 +23,10 @@
   margin: auto auto;
 }
 
+.winner-name, .present-check{
+  display: none;
+}
+
 .main {
   height: 100vh;
   position: relative }

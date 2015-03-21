@@ -13,5 +13,11 @@
 //= require jquery
 //= require jquery_ujs
 //= require bootstrap-sprockets
-//= require turbolinks
 //= require_tree .
+
+$( document ).ready(function() {
+  console.log( "ready!" );
+  $('.winner-name').fadeIn( 1500 );
+  $('.present-check').fadeIn( 1500 );
+
+});
