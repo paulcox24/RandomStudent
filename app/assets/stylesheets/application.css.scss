@@ -30,17 +30,24 @@
 .main {
   height: 100vh;
   position: relative }
-#winnerButton {
+
+#mainPage{
   margin: 0;
   position: absolute;
   top: 50%;
   left: 50%;
   margin-right: -50%;
   transform: translate(-50%, -50%);
+  h1 {
+    text-transform: uppercase;
+  }
+} 
+
+#winnerButton {
   font-size: 3em;
   padding: 1em;
-
 }
+
 .winner {
   margin: 0;
   position: absolute;
